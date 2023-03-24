@@ -1,9 +1,16 @@
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./pages/Layout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+  },
+]);
+
 function App() {
-  return (
-    <div className="App">
-      <h1 className="underline">adas</h1>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
