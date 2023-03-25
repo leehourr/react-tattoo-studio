@@ -79,8 +79,8 @@ export const galleryData = {
     {
       src: GalleryImg3,
       original: GalleryImg3,
-      width: 400,
-      height: 430,
+      width: 450,
+      height: 480,
     },
     {
       src: GalleryImg4,

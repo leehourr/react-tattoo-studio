@@ -24,7 +24,7 @@ const GallerySection = () => {
   // destructure gallery data
   const { title, btnText, btnIcon, images } = galleryData;
   return (
-    <section className="bg-[#F9F9F9] section relative mt-[40px] lg:mt-0 px-10">
+    <section className="bg-[#F9F9F9] section relative mt-[40px] lg:mt-0 px-7 md:px-10">
       <div className="container mx-auto">
         <motion.h2
           variants={fadeIn("up")}
