@@ -25,9 +25,12 @@ module.exports = {
         grey: {
           DEFAULT: "#555555",
         },
+        objectPosition: {
+          "center-bottom": "70%",
+        },
       },
       backgroundImage: {
-        landingPage: "url('/src/asset/landingPage/tattoo.jpg",
+        landingPage: "url('./asset/landingPage/tattoo.jpg')",
         hero: "url('/src/img/hero/bg.jpg')",
         about: "url('/src/img/about/image.png')",
         interview: "url('/src/img/interview/bg.png')",
@@ -37,5 +40,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

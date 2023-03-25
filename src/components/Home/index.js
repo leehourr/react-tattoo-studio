@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -12,6 +13,7 @@ const index = () => {
   return (
     <>
       <LandingPage />
+      {/* <Outlet /> */}
       <About />
       <GallerySection />
       <Skills />
