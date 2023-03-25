@@ -27,6 +27,7 @@ module.exports = {
         },
       },
       backgroundImage: {
+        landingPage: "url('/src/asset/landingPage/tattoo.jpg",
         hero: "url('/src/img/hero/bg.jpg')",
         about: "url('/src/img/about/image.png')",
         interview: "url('/src/img/interview/bg.png')",

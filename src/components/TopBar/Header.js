@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 // import header data
-import { headerData } from "../data/data";
 // import components
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
@@ -9,7 +8,6 @@ import Socials from "./Social";
 import { TiThMenuOutline } from "react-icons/ti";
 
 export const Header = () => {
-  const { logo } = headerData;
   const [isActive, setIsActive] = useState(false);
   const [navMobile, setNavMobile] = useState(false);
 
@@ -21,12 +19,12 @@ export const Header = () => {
   return (
     <header
       className={`${
-        isActive ? "h-[100px] lg:h-[110px] shadow-lg" : "h-[120px] lg:h-[150px]"
+        isActive ? "h-[100px] lg:h-[110px] shadow-lg" : "h-[110px]"
       }  bg-white fixed left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
     >
       <div className="flex justify-between items-center h-full pl-[50px] pr-[60px]">
         <a href="/">
-          <img className="w-[188px] h-[90px]" src={logo} alt="" />
+          <h1 className="text-4xl font-bold touch-pan-up">The Void Tattoo</h1>
         </a>
         <div className="hidden xl:flex">
           <Nav />
