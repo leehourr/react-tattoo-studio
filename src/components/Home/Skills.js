@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/varients";
+import { useLocation } from "react-router-dom";
 
 const Skills = () => {
   const { ref, inView } = useInView({
@@ -14,6 +15,13 @@ const Skills = () => {
   const [piercing, setPiercing] = useState(0);
   const [fullColor, setFullColor] = useState(0);
   const [temporary, setTemporary] = useState(0);
+
+  const skillRef = useRef(null);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    if (pathname === "/about")
+      skillRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [pathname]);
 
   useEffect(() => {
     if (inView) {
@@ -61,7 +69,7 @@ const Skills = () => {
       ref={ref}
       className="section font-primary"
     >
-      <div className="container mx-auto">
+      <div ref={skillRef} className="container mx-auto">
         <div className="flex flex-col xl:flex-row justify-between items-center gap-y-12">
           <div className="w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6">
             <CircularProgressbar

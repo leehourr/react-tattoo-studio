@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { contactData } from "../../data/data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/varients";
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
   const { title, info, form } = contactData;
+  const contactRef = useRef(null);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (pathname === "/about")
+      contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [pathname]);
+
   return (
-    <section className="section">
+    <section ref={contactRef} className="section">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-y-16">
           {/* text */}

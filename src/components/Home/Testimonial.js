@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { testimonialData } from "../../data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/varients";
+import { useLocation } from "react-router-dom";
 
 export const Testimonial = () => {
+  const quoteRef = useRef(null);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    if (pathname === "/about")
+      quoteRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [pathname]);
   return (
     <motion.section
       variants={fadeIn("up")}
@@ -15,7 +22,7 @@ export const Testimonial = () => {
       viewport={{ once: false, amount: 0.2 }}
       className="pb-[40px] pt-[40px] lg:pb-[160px] lg:pt-0"
     >
-      <div className="container mx-auto">
+      <div ref={quoteRef} className="container mx-auto">
         <Swiper>
           {testimonialData.map((slide, index) => {
             const { quoteImg, message, name, occupation, scroll } = slide;

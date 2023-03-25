@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { footerData } from "../../data/data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/varients";
+import { useLocation } from "react-router-dom";
 
 const staggerContainer = {
   hidden: {},
@@ -16,8 +17,16 @@ const staggerContainer = {
 const Footer = () => {
   // destructure footer data
   const { about, links, program, newsletter } = footerData;
+
+  const footerRef = useRef(null);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    if (pathname === "/about")
+      footerRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [pathname]);
+
   return (
-    <footer className="bg-dark section">
+    <footer ref={footerRef} className="bg-dark section">
       <div className="container mx-auto">
         {/* grid */}
         <motion.div

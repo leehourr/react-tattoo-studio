@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { interviewData } from "../../data/data";
 import ModalVideo from "react-modal-video";
 import "../../modalVideo.scss";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/varients";
+import { useLocation } from "react-router-dom";
 
 const Interview = () => {
   const { title, btnText, btnIcon } = interviewData;
   const [isOpen, setOpen] = useState(false);
+  const intervewRef = useRef(null);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (pathname === "/about")
+      intervewRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [pathname]);
+
   return (
     <motion.section
       variants={fadeIn("up")}
@@ -16,7 +25,7 @@ const Interview = () => {
       viewport={{ once: false, amount: 0.1 }}
       className="section bg-dark bg-interview bg-no-repeat bg-cover bg-center lg:h-[812px]"
     >
-      <div className="container mx-auto h-full">
+      <div ref={intervewRef} className="container mx-auto h-full">
         <div className="flex flex-col justify-center h-full">
           <div className="flex flex-col items-start max-w-[880px]">
             <motion.h3
