@@ -10,7 +10,6 @@ const About = () => {
   //   const nav = useNavigate();
   const { pathname } = useLocation();
   const { title, subtitle1, subtitle2, btnText, btnIcon } = aboutData;
-  //   const isMounted = useOnScreen(aboutRef);
   console.log(pathname);
 
   useEffect(() => {
