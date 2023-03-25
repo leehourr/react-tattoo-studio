@@ -34,7 +34,7 @@ const About = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex flex-col lg:flex-row flex-1"
             >
-              <div className="text-[360px] xl:text-[620px] leading-none font-tertiary lg:-tracking-[0.055em] bg-about bg-no-repeat bg-right bg-clip-text text-transparent">
+              <div className="text-[360px] xl:text-[620px] leading-none font-tertiary font-bold lg:-tracking-[0.09em] bg-about bg-no-repeat bg-right bg-clip-text text-transparent">
                 01
               </div>
             </motion.div>
