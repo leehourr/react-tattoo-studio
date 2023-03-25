@@ -32,7 +32,7 @@ module.exports = {
       backgroundImage: {
         landingPage: "url('./asset/landingPage/tattoo.jpg')",
         hero: "url('/src/img/hero/bg.jpg')",
-        about: "url('/src/img/about/image.png')",
+        about: "url('./asset/about/image.png')",
         interview: "url('/src/img/interview/bg.png')",
       },
       content: {

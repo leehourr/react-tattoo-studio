@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useLocation } from "react-router-dom";
-// import tattoo from "../../asset/landingPage/tattoo.jpg";
 import tattoo2 from "../../asset/landingPage/tattoo2.jpg";
 import tattoo3 from "../../asset/landingPage/tattoo3.jpg";
 

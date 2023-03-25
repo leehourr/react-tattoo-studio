@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
