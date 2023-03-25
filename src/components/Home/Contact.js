@@ -10,7 +10,7 @@ const Contact = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (pathname === "/about")
+    if (pathname === "/contacts")
       contactRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [pathname]);
 
