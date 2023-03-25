@@ -27,7 +27,6 @@ export const navData = {
     { href: "/about", name: "About" },
     { href: "/gallery", name: "Gallery" },
     { href: "/interview", name: "Interview" },
-    { href: "/article", name: "Articles" },
     { href: "/contacts", name: "Contact" },
   ],
 };

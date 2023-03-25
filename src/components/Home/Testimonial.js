@@ -11,7 +11,7 @@ export const Testimonial = () => {
   const quoteRef = useRef(null);
   const { pathname } = useLocation();
   useEffect(() => {
-    if (pathname === "/about")
+    if (pathname === "/quotes")
       quoteRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [pathname]);
   return (

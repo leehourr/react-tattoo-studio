@@ -19,7 +19,7 @@ const Skills = () => {
   const skillRef = useRef(null);
   const { pathname } = useLocation();
   useEffect(() => {
-    if (pathname === "/about")
+    if (pathname === "/skill")
       skillRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [pathname]);
 

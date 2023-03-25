@@ -25,10 +25,10 @@ const GallerySection = () => {
   const galleryRef = useRef(null);
   const { pathname } = useLocation();
   useEffect(() => {
-    if (pathname === "/about")
+    if (pathname === "/gallery")
       galleryRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [pathname]);
-  
+
   return (
     <section
       ref={galleryRef}

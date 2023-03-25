@@ -19,13 +19,10 @@ const About = () => {
       aboutRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [pathname]);
   return (
-    <div className="h-screen w-full">
+    <div ref={aboutRef} className="h-screen w-full">
       <section className="lg:py-16 xl:pb-[160px]">
         <div className="container mx-auto">
-          <div
-            ref={aboutRef}
-            className="flex flex-col lg:flex-row gap-x-[70px] items-center"
-          >
+          <div className="flex flex-col lg:flex-row gap-x-[70px] items-center">
             {/* numbers */}
             <motion.div
               variants={fadeIn("right")}

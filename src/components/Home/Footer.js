@@ -21,7 +21,7 @@ const Footer = () => {
   const footerRef = useRef(null);
   const { pathname } = useLocation();
   useEffect(() => {
-    if (pathname === "/about")
+    if (pathname === "/footer")
       footerRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [pathname]);
 

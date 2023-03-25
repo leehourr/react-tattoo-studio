@@ -7,6 +7,9 @@ import GallerySection from "./components/Home/GallerySection";
 import Interview from "./components/Home/Interview";
 import Contact from "./components/Home/Contact";
 import LandingPage from "./components/Home/LandingPage";
+import Skills from "./components/Home/Skills";
+import Testimonial from "./components/Home/Testimonial";
+import Footer from "./components/Home/Footer";
 
 const router = createBrowserRouter([
   {
@@ -20,9 +23,11 @@ const router = createBrowserRouter([
           { path: "/", element: <LandingPage /> },
           { path: "/about", element: <About /> },
           { path: "/gallery", element: <GallerySection /> },
+          { path: "/skill", element: <Skills /> },
+          { path: "/quotes", element: <Testimonial /> },
           { path: "/interview", element: <Interview /> },
-          { path: "/article", element: <Interview /> },
           { path: "/contacts", element: <Contact /> },
+          { path: "/footer", element: <Footer /> },
         ],
       },
     ],
