@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-// import data
 import { galleryData } from "../../data/data";
-// import photo album & lightbox
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-// import motion
 import { motion } from "framer-motion";
-// import variants
 import { fadeIn } from "../../utils/varients";
 
 const slides = galleryData.images.map(({ original, width, height }) => ({

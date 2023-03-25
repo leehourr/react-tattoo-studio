@@ -33,7 +33,7 @@ module.exports = {
         landingPage: "url('./asset/landingPage/tattoo.jpg')",
         hero: "url('/src/img/hero/bg.jpg')",
         about: "url('./asset/about/image.png')",
-        interview: "url('/src/img/interview/bg.png')",
+        interview: "url('./asset/interview/bg.png')",
       },
       content: {
         outlineText: 'url("/src/img/hero/outline-text.svg")',

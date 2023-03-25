@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from "react";
-//  useInView hook
 import { useInView } from "react-intersection-observer";
-// react circular
 import { CircularProgressbar } from "react-circular-progressbar";
-// react circular styles
 import "react-circular-progressbar/dist/styles.css";
-// import motion
 import { motion } from "framer-motion";
-// import variants
 import { fadeIn } from "../../utils/varients";
 
 const Skills = () => {

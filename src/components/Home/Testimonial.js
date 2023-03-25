@@ -1,14 +1,9 @@
 import React from "react";
-// import testimonial data
 import { testimonialData } from "../../data/data";
-// import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
-// import swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-// import motion
 import { motion } from "framer-motion";
-// import variants
 import { fadeIn } from "../../utils/varients";
 
 export const Testimonial = () => {
@@ -23,7 +18,6 @@ export const Testimonial = () => {
       <div className="container mx-auto">
         <Swiper>
           {testimonialData.map((slide, index) => {
-            // destructure slide
             const { quoteImg, message, name, occupation, scroll } = slide;
             return (
               <SwiperSlide key={index}>
