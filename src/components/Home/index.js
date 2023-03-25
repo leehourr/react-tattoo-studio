@@ -7,7 +7,7 @@ import GallerySection from "./GallerySection";
 import Interview from "./Interview";
 import LandingPage from "./LandingPage";
 import Skills from "./Skills";
-import { Testimonial } from "./Testimonial";
+import Testimonial from "./Testimonial";
 
 const index = () => {
   return (

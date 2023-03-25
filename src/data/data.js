@@ -7,8 +7,7 @@ import GalleryImg5 from "../asset/gallery/image5.jpg";
 import GalleryImg6 from "../asset/gallery/image6.jpg";
 import GalleryImg7 from "../asset/gallery/image7.jpg";
 import GalleryImg8 from "../asset/gallery/image8.jpg";
-// import QuoteImg from '../src/img/testimonial/quote.svg';
-// import icons
+import QuoteImg from "../asset/testimonial/quote.svg";
 import { GrFacebookOption } from "react-icons/gr";
 import { IoMdArrowForward } from "react-icons/io";
 import { FiSend } from "react-icons/fi";
@@ -122,22 +121,24 @@ export const interviewData = {
   btnIcon: <FaPlay />,
 };
 
-// export const testimonialData = [
-//   {
-//     quoteImg: QuoteImg,
-//     message:
-//       "The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And it's unique.They will properly consult with you.",
-//     name: 'Jack Geoffrey',
-//     occupation: 'Tattoo Artist',
-//   },
-//   {
-//     quoteImg: QuoteImg,
-//     message:
-//       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa asperiores officia natus dignissimos autem possimus molestias aperiam?',
-//     name: 'Douglas Hane',
-//     occupation: 'Tattoo Artist',
-//   },
-// ];
+export const testimonialData = [
+  {
+    quoteImg: QuoteImg,
+    message:
+      "The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And it's unique.They will properly consult with you.",
+    name: "Jack Geoffrey",
+    occupation: "Tattoo Artist",
+    scroll: ">>>",
+  },
+  {
+    quoteImg: QuoteImg,
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa asperiores officia natus dignissimos autem possimus molestias aperiam?",
+    name: "Douglas Hane",
+    occupation: "Tattoo Artist",
+    scroll: "<<<",
+  },
+];
 
 export const contactData = {
   title: "Get in touch with me:",
