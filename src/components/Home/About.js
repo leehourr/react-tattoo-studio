@@ -7,7 +7,6 @@ import { fadeIn } from "../../utils/varients";
 
 const About = () => {
   const aboutRef = useRef(null);
-  //   const nav = useNavigate();
   const { pathname } = useLocation();
   const { title, subtitle1, subtitle2, btnText, btnIcon } = aboutData;
   console.log(pathname);
