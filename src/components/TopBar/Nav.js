@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import nav data
 import { navData } from "../../data/data";
 
@@ -7,7 +7,7 @@ const Nav = () => {
   // destructure nav data
   const { items } = navData;
   const [isScrollDown, setIsScrollDown] = useState(false);
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

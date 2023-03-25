@@ -1,12 +1,12 @@
 // import Logo from "../asset/header/logo.svg";
-// import GalleryImg1 from '../src/img/gallery/1.png';
-// import GalleryImg2 from '../src/img/gallery/2.png';
-// import GalleryImg3 from '../src/img/gallery/3.png';
-// import GalleryImg4 from '../src/img/gallery/4.png';
-// import GalleryImg5 from '../src/img/gallery/5.png';
-// import GalleryImg6 from '../src/img/gallery/6.png';
-// import GalleryImg7 from '../src/img/gallery/7.png';
-// import GalleryImg8 from '../src/img/gallery/8.png';
+import GalleryImg1 from "../asset/gallery/image1.jpg";
+import GalleryImg2 from "../asset/gallery/image2.jpg";
+import GalleryImg3 from "../asset/gallery/image3.jpg";
+import GalleryImg4 from "../asset/gallery/image4.jpg";
+import GalleryImg5 from "../asset/gallery/image5.jpg";
+import GalleryImg6 from "../asset/gallery/image6.jpg";
+import GalleryImg7 from "../asset/gallery/image7.jpg";
+import GalleryImg8 from "../asset/gallery/image8.jpg";
 // import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from "react-icons/gr";
@@ -59,61 +59,61 @@ export const aboutData = {
   btnIcon: <IoMdArrowForward />,
 };
 
-// export const galleryData = {
-//   title: 'Check my gallery:',
-//   btnText: 'View all',
-//   btnIcon: <IoMdArrowForward />,
-//   images: [
-//     {
-//       src: GalleryImg1,
-//       original: GalleryImg1,
-//       width: 465,
-//       height: 412,
-//     },
-//     {
-//       src: GalleryImg2,
-//       original: GalleryImg2,
-//       width: 465,
-//       height: 540,
-//     },
-//     {
-//       src: GalleryImg3,
-//       original: GalleryImg3,
-//       width: 465,
-//       height: 412,
-//     },
-//     {
-//       src: GalleryImg4,
-//       original: GalleryImg4,
-//       width: 465,
-//       height: 540,
-//     },
-//     {
-//       src: GalleryImg5,
-//       original: GalleryImg5,
-//       width: 465,
-//       height: 540,
-//     },
-//     {
-//       src: GalleryImg6,
-//       original: GalleryImg6,
-//       width: 464,
-//       height: 412,
-//     },
-//     {
-//       src: GalleryImg7,
-//       original: GalleryImg7,
-//       width: 465,
-//       height: 540,
-//     },
-//     {
-//       src: GalleryImg8,
-//       original: GalleryImg8,
-//       width: 465,
-//       height: 412,
-//     },
-//   ],
-// };
+export const galleryData = {
+  title: "Check my gallery:",
+  btnText: "View all",
+  btnIcon: <IoMdArrowForward />,
+  images: [
+    {
+      src: GalleryImg1,
+      original: GalleryImg1,
+      width: 350,
+      height: 500,
+    },
+    {
+      src: GalleryImg2,
+      original: GalleryImg2,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg3,
+      original: GalleryImg3,
+      width: 400,
+      height: 430,
+    },
+    {
+      src: GalleryImg4,
+      original: GalleryImg4,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg5,
+      original: GalleryImg5,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg6,
+      original: GalleryImg6,
+      width: 464,
+      height: 412,
+    },
+    {
+      src: GalleryImg7,
+      original: GalleryImg7,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg8,
+      original: GalleryImg8,
+      width: 465,
+      height: 412,
+    },
+  ],
+};
 
 export const interviewData = {
   title:
