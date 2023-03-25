@@ -17,7 +17,7 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1300px",
+      xl: "1350px",
     },
     extend: {
       colors: {
@@ -40,5 +40,11 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    },
+    require("tailwind-scrollbar"),
+  ],
 };
