@@ -3,21 +3,31 @@ import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { aboutData } from "../../data/data";
 import { fadeIn } from "../../utils/varients";
+// import useOnScreen from "../../hook/useOnScreen";
 
 const About = () => {
   const aboutRef = useRef(null);
+  //   const nav = useNavigate();
   const { pathname } = useLocation();
   const { title, subtitle1, subtitle2, btnText, btnIcon } = aboutData;
+  //   const isMounted = useOnScreen(aboutRef);
+  console.log(pathname);
 
   useEffect(() => {
+    // console.log(isMounted);
+    // if (isMounted) nav("/about");
+
     if (pathname === "/about")
       aboutRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [pathname]);
   return (
-    <div ref={aboutRef}>
+    <div className="h-screen w-full">
       <section className="lg:py-16 xl:pb-[160px]">
         <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row gap-x-[70px] items-center">
+          <div
+            ref={aboutRef}
+            className="flex flex-col lg:flex-row gap-x-[70px] items-center"
+          >
             {/* numbers */}
             <motion.div
               variants={fadeIn("right")}

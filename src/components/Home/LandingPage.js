@@ -3,13 +3,20 @@ import { useMediaQuery } from "react-responsive";
 import { useLocation } from "react-router-dom";
 import tattoo2 from "../../asset/landingPage/tattoo2.jpg";
 import tattoo3 from "../../asset/landingPage/tattoo3.jpg";
+// import useOnScreen from "../../hook/useOnScreen";
 
 const LandingPage = () => {
   const { pathname } = useLocation();
   const landingRef = useRef(null);
+  //   const nav = useNavigate();
+
+  //   const isMounted = useOnScreen(landingRef);
+  //   console.log(isMounted);
+
   const mobileScreen = useMediaQuery({
     query: "(max-width: 640px)",
   });
+
   useEffect(() => {
     if (pathname === "/")
       landingRef.current?.scrollIntoView({ behavior: "smooth" });
